@@ -1,7 +1,0 @@
-// Validating benchmarks:
-// ***** BenchmarkRunner: Start   *****
-// ***** Found 4 benchmark(s) in total *****
-// ***** Building 1 exe(s) in Parallel: Start   *****
-// start dotnet  restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in D:\Projects\github-projects\ListCountPerformance\bin\release\net6.0\8cd51ecb-c3e8-41f9-8c23-80f3c70e4939
-// command took 9.49s and exited with 0
-// start dotnet  build -c Release --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in D:\Projects\github-projects\ListCountPerformance\bin\release\net6.0\8cd51ecb-c3e8-41f9-8c23-80f3c70e4939
