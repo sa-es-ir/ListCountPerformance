@@ -22,7 +22,7 @@ public class ListCountBenchmark
         _hashset = new(range);
     }
 
-	[Benchmark]
+    [Benchmark]
     public int HashSetCountProperty() => _hashset.Count;
     [Benchmark]
     public int HashSetCountMethod() => _hashset.Count();
