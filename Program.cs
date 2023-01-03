@@ -3,10 +3,9 @@ using System.Linq;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Running;
 
-BenchmarkRunner.Run<Benchmark>();
+BenchmarkRunner.Run<ListCountBenchmark>();
 
-[MemoryDiagnoser(false)]
-public class Benchmark
+public class ListCountBenchmark
 {
     private List<int> _list;
     private HashSet<int> _hashset;
@@ -23,13 +22,13 @@ public class Benchmark
         _hashset = new(range);
     }
 
+	[Benchmark]
+    public int HashSetCountProperty() => _hashset.Count;
     [Benchmark]
-    public int List_Count_Property() => _list.Count;
+    public int HashSetCountMethod() => _hashset.Count();
+	
     [Benchmark]
-    public int List_Count_Method() => _list.Count();
-
+    public int ListCountProperty() => _list.Count;
     [Benchmark]
-    public int HashSet_Count_Property() => _hashset.Count;
-    [Benchmark]
-    public int HashSet_Count_Method() => _hashset.Count();
+    public int ListCountMethod() => _list.Count();
 }
