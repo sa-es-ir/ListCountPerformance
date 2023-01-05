@@ -1,6 +1,6 @@
 # Compare List Count property and Count() method
 
-Based on this benchamrk it's always better to use Count property over Count() method for **List** or any type which implements ICollection<T>.
+Based on this benchamrk it's always better to use **Count** property over Count() method for **List** or any type which implements ICollection<T>.
 
 ```bash
 |                 Method | Count |      Mean |     Error |    StdDev |    Median |
