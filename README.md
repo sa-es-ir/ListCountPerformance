@@ -1,5 +1,8 @@
 # Compare List Count property and Count() method
 
+Both of them will give us the number of items in a collection.
+
+
 Based on this benchamrk it's always better to use **Count** property over **Count()** method for **List** or any type which implements **ICollection**
 
 ```bash
