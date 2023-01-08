@@ -2,6 +2,8 @@
 
 Both of them will give us the number of items in a collection.
 
+ICollection<T> interface has a Count property and if you're using collection which implements ICollection<T> like List or HashSet you need to use Count property.
+    
 
 Based on this benchamrk it's always better to use **Count** property over **Count()** method for **List** or any type which implements **ICollection**
 
