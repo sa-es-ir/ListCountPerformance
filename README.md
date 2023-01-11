@@ -1,4 +1,4 @@
-# List Count property and Count() method
+# List Count property vs Count() method
 
 Both of them will give us the number of items in a collection.
 
