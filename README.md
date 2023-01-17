@@ -30,12 +30,12 @@ public class ListCountBenchmark
     public void GlobalSetup()
     {
         IEnumerable<int> range = Enumerable.Range(0, Count);
-
         _list = range.ToList();
     }
 
     [Benchmark]
     public int ListCountProperty() => _list.Count;
+    
     [Benchmark]
     public int ListCountMethod() => _list.Count();
 }
