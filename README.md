@@ -16,7 +16,7 @@ Based on this benchamrk it's always better to use **Count** property over **Coun
 |     HashSetCountMethod | 10000 | 5.1896 ns | 0.2814 ns | 0.7796 ns | 4.9093 ns |
 ```
 
-## Benchmark code
+## The Benchmark code
 
 ```csharp
 public class ListCountBenchmark
